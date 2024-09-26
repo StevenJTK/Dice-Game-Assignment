@@ -13,7 +13,7 @@ public class Dice {
     private int[] player2Roll = new int[2];
 
     public void gameStart() {
-        System.out.println("Welcome to the Dice Game! ");
+
         System.out.println("Player one, please enter your name. ");
         Player player1 = new Player(sc.nextLine());
 
@@ -23,6 +23,7 @@ public class Dice {
             System.out.println(player1Roll[i]);
 
         }
+
         System.out.println("Your final score is " + total);
 
         System.out.println("Player two, please enter your name. ");
@@ -39,7 +40,7 @@ public class Dice {
         if (total > total2) {
             System.out.println("Congratulations " + player1.getName() + ", you are the winner! ");
         } else if (total < total2) {
-            System.out.println("Congratulations" + player2.getName() + ", you are the winner! ");
+            System.out.println("Congratulations " + player2.getName() + ", you are the winner! ");
         }   else {
             System.out.println("Tie!");
         }
